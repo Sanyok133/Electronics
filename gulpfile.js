@@ -21,8 +21,7 @@ function server(cb) {
       baseDir: 'src'
     },
     ui: false,
-    cors: true,
-    notify: false
+    cors: true
   })
   cb()
 }
