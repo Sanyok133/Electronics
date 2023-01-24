@@ -1,10 +1,11 @@
-const {src, dest, series, parallel, watch} = require('gulp')
+const {src, dest, series, watch} = require('gulp')
 const sass = require('gulp-sass')(require('sass'))
 const plumber = require('gulp-plumber')
 const rename = require('gulp-rename')
 const browser = require('browser-sync').create()
 const autoprefixer = require('gulp-autoprefixer')
-const {notify} = require("browser-sync");
+const sprite = require('gulp-svgstore');
+const svgmin = require('gulp-svgmin');
 
 function styles() {
   return src('src/sass/main.scss', {sourcemaps: true})
@@ -21,9 +22,24 @@ function server(cb) {
       baseDir: 'src'
     },
     ui: false,
-    cors: true
+    cors: true,
+    notify: false
   })
   cb()
+}
+
+function svg() {
+  return src('src/img/icons/*.svg')
+    .pipe(svgmin({
+      multipass: true,
+      js2svg: {
+        pretty: true,
+        indent: 2,
+      }
+    }))
+    .pipe(sprite())
+    .pipe(rename('sprite.svg'))
+    .pipe(dest('src/img'))
 }
 
 function reload(cb) {
@@ -38,6 +54,7 @@ function watcher() {
 
 exports.default = series(
   styles,
+  svg,
   server,
   watcher
 )

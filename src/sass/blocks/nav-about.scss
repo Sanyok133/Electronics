@@ -9,19 +9,21 @@
   padding: 16px;
   z-index: 2;
   background-color: #ffffff;
+  overflow: auto;
 }
 
 .nav-about__list {
-  margin-bottom: 44px;
+  padding: 0;
+  list-style: none;
+  margin: 0 0 44px;
 }
 
 .nav-about__lang {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
-  margin: 0 auto 30px;
-  max-width: 350px;
+  gap: 20px;
+  margin-bottom: 30px;
 }
 
 .nav-about__lang-link {
@@ -64,7 +66,6 @@
   padding: 8px;
   @include mixins.font(16px, 28px, 600);
   color: #fcfcfc;
-  width: 100%;
   background-color: #f56e1e;
   border-radius: 12px;
   margin-top: 30px;

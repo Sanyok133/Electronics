@@ -30,7 +30,10 @@
   @include mixins.flex-align;
 }
 
-.info-list__links-wrapper {
+.info-list__links-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: none;
 
   &--no-js {

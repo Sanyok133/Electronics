@@ -1,0 +1,21 @@
+@use "../global/mixins";
+
+.recommendation {
+  padding: 20px 15px;
+}
+
+.recommendation__title {
+  margin: 0 0 30px;
+  @include mixins.font(24px, 28px, 700);
+  color: #4E4B66;
+}
+
+.recommendation__card-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+
+  @media (max-width: 375px) {
+    grid-template-columns: 1fr;
+  }
+}

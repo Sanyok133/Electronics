@@ -2,9 +2,9 @@
   position: relative;
 }
 
-.slider .slick-arrow {
+.slick-arrow {
   position: absolute;
-  top: calc(44% - 16px);
+  top: calc(50% - 16px);
   z-index: 1;
   font-size: 0;
   border-radius: 50%;
@@ -13,30 +13,34 @@
   height: 33px;
 }
 
-.slider .slick-prev {
+.slider__item {
+  border-radius: 20px;
+}
+
+.slick-prev {
   left: 16px;
-  background: rgba(110, 113, 145, 0.45) url("../../img/arrow-slider.svg") no-repeat center;
+  background: rgba(110, 113, 145, 0.45) url("../../img/icons/arrow-slider.svg") no-repeat center;
   transform: scaleX(-1);
 }
 
-.slider .slick-next {
-  background: rgba(110, 113, 145, 0.45) url("../../img/arrow-slider.svg") no-repeat center;
+.slick-next {
+  background: rgba(110, 113, 145, 0.45) url("../../img/icons/arrow-slider.svg") no-repeat center;
   right: 16px;
 }
 
-.slider .slick-dots {
-  display: flex;
-  align-items: center;
+.slick-dots {
   justify-content: center;
+  display: flex;
   padding: 0;
+  margin: 8px 0 0;
 }
 
-.slider .slick-dots li {
+.slick-dots li {
   list-style: none;
   margin: 0 6px;
 }
 
-.slider .slick-dots button {
+.slick-dots button {
   transition: all 0.2s linear;
   padding: 0;
   font-size: 0;
@@ -53,12 +57,31 @@
 
 .slick-track {
   display: flex;
-  align-items: flex-start;
-  will-change: transform;
 }
 
-.slider .slick-active button {
+.slick-active button {
   width: 22px;
   border-radius: 12px;
   background-color: #f56e1e;
+}
+
+.slider__dots,
+.slider__dots-main {
+  width: 100%;
+  height: 20px;
+}
+
+#slider-news {
+  &::before {
+    content: "Новость";
+    color: #ffffff;
+    z-index: 1;
+    padding: 7px 16px;
+    border-radius: 8px;
+    top: 5%;
+    left: 3%;
+    display: block;
+    position: absolute;
+    background-color: #f56e1e;
+  }
 }

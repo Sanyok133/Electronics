@@ -1,0 +1,54 @@
+@use "../global/mixins";
+
+.categories {
+  padding: 20px 15px;
+}
+
+.categories__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  
+  @media (max-width: 375px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.categories__title {
+  margin: 0 0 30px;
+  @include mixins.font(28px, 32px, 700);
+  color: #6e7191;
+}
+
+.categories__image-wrapper {
+  box-sizing: border-box;
+  width: 65px;
+  height: 65px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 3px solid #f56e1e;
+  @include mixins.flex-align(center, center);
+}
+
+.categories__item {
+  display: block;
+  box-sizing: border-box;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  padding: 15px 15px 10px;
+  min-height: 150px;
+
+  &:active {
+    outline: 1px solid #DE5703;
+  }
+}
+
+.categories__text {
+  margin: 0;
+  @include mixins.font(14px, 16px, 700);
+  @include mixins.flex-align(center, center);
+  color: #4e4b66;
+  text-align: center;
+  width: 100%;
+  min-height: 60px;
+}

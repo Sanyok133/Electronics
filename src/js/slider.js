@@ -1,13 +1,10 @@
 $(document).ready(function () {
-  $('.slider').slick({
+  $('#slider-main').slick({
     arrows: false,
     dots: true,
-    speed: 1000,
     easing: 'ease-in',
-    autoplay: true,
-    autoplaySpeed: 4000,
-    draggable: false,
     mobileFirst: true,
+    appendDots: $('.slider__dots-main'),
     responsive: [
       {
         breakpoint: 768,
@@ -16,5 +13,13 @@ $(document).ready(function () {
         }
       }
     ]
+  });
+
+  $("#slider-news").slick({
+    arrows: true,
+    dots: true,
+    easing: 'ease-in',
+    appendDots: $('.slider__dots'),
+    mobileFirst: true,
   });
 })
