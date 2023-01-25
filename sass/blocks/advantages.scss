@@ -1,0 +1,47 @@
+@use "../global/mixins";
+
+.advantages {
+  padding: 20px 15px 23px;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__item {
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 32px 30px;
+  border: 1px solid #6e7191;
+  border-radius: 20px;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.advantages__image-wrapper {
+  box-sizing: border-box;
+  width: 90px;
+  height: 90px;
+  border: 3px solid #F56E1E;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+  @include mixins.flex-align;
+}
+
+.advantages__item-title {
+  @include mixins.font(28px, 32px, 700);
+  color: #f56e1e;
+  margin: 0 0 16px;
+}
+
+.advantages__item-description {
+  @include mixins.font(16px, 20px, 400);
+  color: #6e7191;
+  margin: 0;
+}

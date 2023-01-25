@@ -1,0 +1,46 @@
+@use "../global/mixins";
+
+.card__image-wrapper {
+  width: 165px;
+  height: 165px;
+  margin: 0 auto 16px;
+}
+
+.card__price {
+  @include mixins.font(20px, 28px, 700);
+  color: #14142b;
+  margin-bottom: 8px;
+
+  sup {
+    @include mixins.font(12px, 14px, 500);
+    color: #a0a3bd;
+  }
+}
+
+.card__title {
+  @include mixins.font(14px, 16px, 400);
+  color: #6e7191;
+}
+
+.card__number {
+  @include mixins.font(14px, 16px, 400);
+  color: #4e4b66;
+  margin-bottom: 16px;
+
+  span {
+    display: block;
+    @include mixins.font(14px, 16px, 700);
+  }
+}
+
+.card__button {
+  width: 100%;
+  background-color: #f56e1e;
+  color: #ffffff;
+  border-radius: 12px;
+  @include mixins.font(16px, 28px, 600);
+  padding: 8px 23px;
+  box-sizing: border-box;
+  @include mixins.flex-align;
+  gap: 10px;
+}

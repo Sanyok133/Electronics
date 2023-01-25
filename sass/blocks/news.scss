@@ -1,0 +1,47 @@
+@use "../global/mixins";
+
+.news {
+  padding: 20px 15px;
+}
+
+.news__wrapper {
+  @include mixins.flex-align(space-between, center);
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.news__button {
+  min-width: 165px;
+  @include mixins.flex-align(center, center);
+  gap: 9px;
+  @include mixins.font(14px, 30px, 500);
+  color: #6e7191;
+  border: 1px solid #6e7191;
+  background-color: #ffffff;
+  border-radius: 8px;
+
+  svg {
+    transform: rotate(-90deg);
+  }
+}
+
+.news__title {
+  margin: 0;
+  @include mixins.font(28px, 32px, 700);
+  color: #4e4b66;
+}
+
+.news__text {
+  margin: 12px 0;
+  color: #4e4b66;
+  @include mixins.font(22px, 24px, 600)
+}
+
+.news__date {
+  display: flex;
+  align-content: center;
+  gap: 6px;
+  margin: 0 0 8px;
+  color: #a0a3bc;
+  @include mixins.font(12px, 16px, 400)
+}

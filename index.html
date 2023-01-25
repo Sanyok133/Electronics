@@ -1,0 +1,516 @@
+<!doctype html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>АВТО Электрика</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="page__body">
+<header class="header header--no-js">
+  <a class="header__logo" href="#">
+    <span class="visually-hidden">Ссылка на главную страницу</span>
+    <img src="img/logo.svg" alt="логотип Авто электрика" width="136" height="54">
+  </a>
+
+  <div class="header__search">
+    <a class="header__search-button" href="#">
+      <span class="visually-hidden">Поиск по сайту</span>
+      <svg width="25" height="25">
+        <use xlink:href="img/sprite.svg#search"></use>
+      </svg>
+    </a>
+  </div>
+
+  <div class="header__nav">
+    <div class="header__nav-wrapper nav-about header__nav-wrapper--no-js">
+      <ul class="nav-about__list info-list">
+        <li class="info-list__item">
+          <a href="#" class="info-list__category">
+            О компании
+            <div class="info-list__category-arrow">
+              <span class="visually-hidden">Раскрыть категорию</span>
+              <svg width="12" height="7">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+          </a>
+          <ul class="info-list__links-list info-list__links-links--no-js">
+            <li class="info-list__links-item">
+              <a class="info-list__link" href="#">Документы и реквизиты</a>
+            </li>
+            <li class="info-list__links-item">
+              <a class="info-list__link" href="#">Бренды</a>
+            </li>
+            <li class="info-list__links-item">
+              <a class="info-list__link" href="#">Сотрудники</a>
+            </li>
+            <li class="info-list__links-item">
+              <a class="info-list__link" href="#">Контакты</a>
+            </li>
+            <li class="info-list__links-item">
+              <a class="info-list__link" href="#">Карьера</a>
+            </li>
+          </ul>
+        </li>
+        <li class="info-list__item">
+          <a href="#" class="info-list__category">
+            Клиентам
+            <div class="info-list__category-arrow">
+              <span class="visually-hidden">Раскрыть категорию</span>
+              <svg width="12" height="7">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+          </a>
+          <ul class="info-list__links-list info-list__links-links--no-js">
+            <li class="info-list__links-item">
+              <a class="info-list__link" href="#">Документы и реквизиты</a>
+            </li>
+            <li class="info-list__links-item">
+              <a class="info-list__link" href="#">Бренды</a>
+            </li>
+            <li class="info-list__links-item">
+              <a class="info-list__link" href="#">Сотрудники</a>
+            </li>
+            <li class="info-list__links-item">
+              <a class="info-list__link" href="#">Контакты</a>
+            </li>
+            <li class="info-list__links-item">
+              <a class="info-list__link" href="#">Карьера</a>
+            </li>
+          </ul>
+        </li>
+        <li class="info-list__item">
+          <a class="info-list__category" href="#">Сотрудничество</a>
+        </li>
+        <li class="info-list__item">
+          <a class="info-list__category" href="#">Контакты</a>
+        </li>
+      </ul>
+
+      <div class="nav-about__lang">
+        <a class="nav-about__lang-link nav-about__lang-link--current" href="#">
+          <div class="nav-about__lang-image-wrapper">
+            <img src="img/ru-lang.png" alt="" width="31" height="32">
+          </div>
+          RU
+          <span class="visually-hidden">Русский</span>
+        </a>
+        <a class="nav-about__lang-link" href="#" lang="zh">
+          <div class="nav-about__lang-image-wrapper">
+            <img src="img/zh-lang.png" alt="" width="30" height="30">
+          </div>
+          日本語
+          <span class="visually-hidden">日本語</span>
+        </a>
+      </div>
+      <div class="nav-about__phones">
+        <a class="nav-about__phone-link" href="tel:8 (800) 455-45-11">8 (800) 455-45-11</a>
+        <a class="nav-about__phone-link" href="tel:+7 (495) 108-54-64">+7 (495) 108-54-64</a>
+        <a class="nav-about__phone-button" href="#">
+          <svg width="29" height="28">
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+          Заказать звонок
+        </a>
+      </div>
+      <div class="nav-about__social">
+        <a href="#" class="nav-about__social-link">
+          <svg width="44" height="44">
+            <use xlink:href="img/sprite.svg#tg"></use>
+          </svg>
+          <span class="visually-hidden">Телеграм</span>
+        </a>
+        <a href="#" class="nav-about__social-link">
+          <svg width="44" height="44">
+            <use xlink:href="img/sprite.svg#vk"></use>
+          </svg>
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
+      </div>
+    </div>
+    <button class="header__menu-button" type="button">
+      <span class="visually-hidden">Открыть навигацию</span>
+    </button>
+  </div>
+</header>
+<main class="page__main">
+  <section class="hero">
+    <h2 class="visually-hidden">Добро пожаловать на сайт!</h2>
+    <div id="slider-main" class="slider">
+      <div class="slider__item">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/slider-tablet.png 1x">
+          <img data-lazy="img/slider.png" src="" alt="">
+        </picture>
+      </div>
+      <div class="slider__item">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/slider-tablet.png 1x">
+          <img data-lazy="img/slider.png" src="" alt="">
+        </picture>
+      </div>
+      <div class="slider__item">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/slider-tablet.png 1x">
+          <img data-lazy="img/slider.png" src="" alt="">
+        </picture>
+      </div>
+      <div class="slider__item">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/slider-tablet.png 1x">
+          <img data-lazy="img/slider.png" src="" alt="">
+        </picture>
+      </div>
+    </div>
+    <div class="slider__dots-main"></div>
+  </section>
+  <section class="categories">
+    <h2 class="categories__title">Популярные категории</h2>
+    <div class="categories__list">
+      <a class="categories__item" href="#">
+        <div class="categories__image-wrapper">
+          <svg width="41" height="28">
+            <use xlink:href="img/sprite.svg#categories-1"></use>
+          </svg>
+        </div>
+        <p class="categories__text">Стеклоочистители и комплектующие</p>
+      </a>
+      <a class="categories__item" href="#">
+        <div class="categories__image-wrapper">
+          <svg width="35" height="44">
+            <use xlink:href="img/sprite.svg#categories-3"></use>
+          </svg>
+        </div>
+        <p class="categories__text">Карбюраторы</p>
+      </a>
+      <a class="categories__item" href="#">
+        <div class="categories__image-wrapper">
+          <svg width="31" height="38">
+            <use xlink:href="img/sprite.svg#categories-2"></use>
+          </svg>
+        </div>
+        <p class="categories__text">Термостаты</p>
+      </a>
+      <a class="categories__item" href="#">
+        <div class="categories__image-wrapper">
+          <svg width="40" height="40">
+            <use xlink:href="img/sprite.svg#categories-4"></use>
+          </svg>
+        </div>
+        <p class="categories__text">Датчики и&nbsp;комбинации приборов</p>
+      </a>
+      <a class="categories__item" href="#">
+        <div class="categories__image-wrapper">
+          <svg width="37" height="36">
+            <use xlink:href="img/sprite.svg#categories-5"></use>
+          </svg>
+        </div>
+        <p class="categories__text">Электро оборудование</p>
+      </a>
+      <a class="categories__item" href="#">
+        <div class="categories__image-wrapper">
+          <svg width="41" height="24">
+            <use xlink:href="img/sprite.svg#categories-6"></use>
+          </svg>
+        </div>
+        <p class="categories__text">Звуковые сигналы</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="news">
+    <div class="news__wrapper">
+      <h2 class="news__title">Новости</h2>
+      <a class="news__button" href="#">
+        Посмотреть все
+        <svg width="12" height="7">
+          <use xlink:href="img/sprite.svg#arrow"></use>
+        </svg>
+      </a>
+    </div>
+    <div id="slider-news" class="slider">
+      <div class="slider__item">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/slider-tablet.png 1x">
+          <img data-lazy="img/slider-1.jpg" src="" alt="">
+        </picture>
+      </div>
+      <div class="slider__item">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/slider-tablet.png 1x">
+          <img data-lazy="img/slider-1.jpg" src="" alt="">
+        </picture>
+      </div>
+      <div class="slider__item">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/slider-tablet.png 1x">
+          <img data-lazy="img/slider-1.jpg" src="" alt="">
+        </picture>
+      </div>
+      <div class="slider__item">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/slider-tablet.png 1x">
+          <img data-lazy="img/slider-1.jpg" src="" alt="">
+        </picture>
+      </div>
+    </div>
+    <a href="#">
+      <div class="news__text-wrapper">
+        <h2 class="news__text">Заголовок в две строчки или в три строчки (третья строчка)</h2>
+        <p class="news__date">
+          <svg width="16" height="16">
+            <use xlink:href="img/sprite.svg#date"></use>
+          </svg>
+          28.09.2022
+        </p>
+      </div>
+    </a>
+    <div class="slider__dots"></div>
+  </section>
+
+  <div class="divider">
+    <img src="img/divider.png" alt="" aria-hidden="true" width="345" height="112">
+  </div>
+
+  <section class="technique">
+    <h2 class="technique__title">Автозапчасти к технике</h2>
+    <div class="technique__list">
+      <a class="technique__item" href="#">
+        <div class="technique__image-wrapper">
+          <img src="img/technique-1.png" alt="" aria-hidden="true" width="128" height="150">
+        </div>
+        <p class="technique__text">Грузовые</p>
+      </a>
+      <a class="technique__item" href="#">
+        <div class="technique__image-wrapper">
+          <img src="img/technique-2.png" alt="" aria-hidden="true" width="128" height="150">
+        </div>
+        <p class="technique__text">Трактора</p>
+      </a>
+      <a class="technique__item" href="#">
+        <div class="technique__image-wrapper">
+          <img src="img/technique-3.png" alt="" aria-hidden="true" width="128" height="150">
+        </div>
+        <p class="technique__text">Легковые</p>
+      </a>
+      <a class="technique__item" href="#">
+        <div class="technique__image-wrapper">
+          <img src="img/technique-4.png" alt="" aria-hidden="true" width="128" height="149">
+        </div>
+        <p class="technique__text">Сельхозтехника</p>
+      </a>
+      <a class="technique__item" href="#">
+        <div class="technique__image-wrapper">
+          <img src="img/technique-5.png" alt="" aria-hidden="true" width="128" height="150">
+        </div>
+        <p class="technique__text">Автобусы</p>
+      </a>
+      <a class="technique__item" href="#">
+        <div class="technique__image-wrapper">
+          <img src="img/technique-6.png" alt="" aria-hidden="true" width="128" height="149">
+        </div>
+        <p class="technique__text">Спецтехника</p>
+      </a>
+      <a class="technique__item" href="#">
+        <div class="technique__image-wrapper">
+          <img src="img/technique-7.png" alt="" aria-hidden="true" width="128" height="150">
+        </div>
+        <p class="technique__text">Другое</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="recommendation">
+    <h2 class="recommendation__title">Рекомендации на основе просмотренного</h2>
+    <div class="recommendation__card-list">
+      <article class="recommendation__article card">
+        <a href="#">
+          <div class="card__image-wrapper">
+            <img src="img/card.png" alt="" width="165" height="165">
+          </div>
+
+          <div class="card__price">
+            999999 ₽
+            <sup>
+              <del>999999 ₽</del>
+            </sup>
+          </div>
+
+          <h3 class="card__title">Фара светодиодная дополнительная круглая, направленный свет, 14 диодов, 42W,
+            (115х42х142)</h3>
+        </a>
+
+        <div class="card__number">
+          Кат. номер:
+          <span>AE42R-14LED-42HC</span>
+        </div>
+
+        <a class="card__button" href="#">
+          <svg width="28" height="28">
+            <use xlink:href="img/sprite.svg#basket"></use>
+          </svg>
+          В корзину
+        </a>
+      </article>
+      <article class="recommendation__article card">
+        <a href="#">
+          <div class="card__image-wrapper">
+            <img src="img/card.png" alt="" width="165" height="165">
+          </div>
+
+          <div class="card__price">
+            999999 ₽
+            <sup>
+              <del>999999 ₽</del>
+            </sup>
+          </div>
+
+          <h3 class="card__title">Фара светодиодная дополнительная круглая, направленный свет, 14 диодов, 42W,
+            (115х42х142)</h3>
+        </a>
+
+        <div class="card__number">
+          Кат. номер:
+          <span>AE42R-14LED-42HC</span>
+        </div>
+
+        <a class="card__button" href="#">
+          <svg width="28" height="28">
+            <use xlink:href="img/sprite.svg#basket"></use>
+          </svg>
+          В корзину
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <div class="divider">
+    <img src="img/divider.png" alt="" aria-hidden="true" width="345" height="112">
+  </div>
+
+  <section class="advantages">
+    <h2 class="visually-hidden">Наши примущества</h2>
+    <ul class="advantages__list">
+      <li class="advantages__item">
+        <div class="advantages__image-wrapper">
+          <svg width="69" height="42">
+            <use xlink:href="img/sprite.svg#advantages-1"></use>
+          </svg>
+        </div>
+        <h3 class="advantages__item-title">Динамично</h3>
+        <p class="advantages__item-description">Мы предлагаем более 15000 наименований запчастей на все виды
+          автотранспортных средств, тракторную и сельхозтехнику, спецтехнику.</p>
+      </li>
+      <li class="advantages__item">
+        <div class="advantages__image-wrapper">
+          <svg width="53" height="56">
+            <use xlink:href="img/sprite.svg#advantages-2"></use>
+          </svg>
+        </div>
+        <h3 class="advantages__item-title">Надежно</h3>
+        <p class="advantages__item-description">На весь ассортимент мы предоставляем гарантию
+          до 3 лет! Продукция «АвтоЭлектрики» выпускается на современном заводском оборудовании.</p>
+      </li>
+      <li class="advantages__item">
+        <div class="advantages__image-wrapper">
+          <svg width="49" height="64">
+            <use xlink:href="img/sprite.svg#advantages-3"></use>
+          </svg>
+        </div>
+        <h3 class="advantages__item-title">Доступно</h3>
+        <p class="advantages__item-description">Ценовая политика фирмы – одна из наших самых сильных сторон. Мы следим
+          за ситуацией на рынке.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="seo">
+    <h2 class="seo__title">Оптовая продажа автотракторных запчастей</h2>
+    <div class="seo__wrapper">
+      <p class="seo__description">Гармоничное развитие всех подразделений компании в условиях современного рынка дает
+        нам
+        возможность вместе с нашими партнерами чувствовать уверенность в завтрашнем дне.
+        Гармоничное развитие всех подразделений компании в условиях современного рынка дает
+        нам
+        возможность вместе с нашими партнерами чувствовать уверенность в завтрашнем дне.
+        Гармоничное развитие всех подразделений компании в условиях современного рынка дает
+        нам
+        возможность вместе с нашими партнерами чувствовать уверенность в завтрашнем дне.</p>
+    </div>
+    <a class="seo__link" href="#">
+      Читать далее
+      <svg class="seo__link-arrow" width="12" height="7">
+        <use xlink:href="img/sprite.svg#arrow"></use>
+      </svg>
+    </a>
+  </section>
+
+  <section class="subscribe">
+    <div class="subscribe__wrapper">
+      <h2 class="subscribe__title">Выберите категорию рассылки</h2>
+      <form class="form-distribution" action="" method="post">
+        <fieldset class="form-distribution__fieldset">
+          <label class="form-distribution__label">
+            <input class="form-distribution__checkbox visually-hidden" type="checkbox" value="catalog" checked>
+            <span class="form-distribution__text">Электронная версия каталога продукции</span>
+          </label>
+          <label class="form-distribution__label">
+            <input class="form-distribution__checkbox visually-hidden" type="checkbox" value="actual prices">
+            <span class="form-distribution__text">Прайс-лист с&nbsp;актуальными ценами</span>
+          </label>
+          <label class="form-distribution__label">
+            <input class="form-distribution__checkbox visually-hidden" type="checkbox" value="promotions and news"
+              checked>
+            <span class="form-distribution__text">Информация о&nbsp;новинках и акциях</span>
+          </label>
+        </fieldset>
+        <label>
+          <input class="form-distribution__input" type="email" placeholder="Введите Ваш e-mail">
+        </label>
+        <button class="form-distribution__button" type="submit">Подписаться</button>
+        <p class="form-distribution__meta">Нажимая «Подписаться», вы соглашаетесь с&nbsp;<a href="#">политикой
+          конфиденциальности</a></p>
+      </form>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <a class="footer__logo" href="#">
+    <span class="visually-hidden">Ссылка на главную страницу</span>
+    <img src="img/logo-footer.svg" alt="логотип Авто электрика" width="136" height="54">
+  </a>
+  <div class="footer__text-wrapper">
+    <p class="footer__text">Оптовая продажа запчастей <br> на все виды автотранспортных средств</p>
+    <p class="footer__text">ИП Хомченко Максим Альбертович <br> ОГРНИП 000000000</p>
+  </div>
+  <a class="footer__feedback">Ссылка на форму обратной связи <br> со службой контроля качества</a>
+  <div class="footer__social">
+    <a href="#" class="footer__social-link">
+      <svg width="44" height="44">
+        <use xlink:href="img/sprite.svg#tg-footer"></use>
+      </svg>
+      <span class="visually-hidden">Телеграм</span>
+    </a>
+    <a href="#" class="footer__social-link">
+      <svg width="44" height="44">
+        <use xlink:href="img/sprite.svg#vk-footer"></use>
+      </svg>
+      <span class="visually-hidden">Вконтакте</span>
+    </a>
+  </div>
+  <div class="footer__copyright">
+    1993 - 2022 © АвтоЭлектрика
+    <a href="#">Политика конфиденциальности</a>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/header-scroll.js"></script>
+<script src="js/seo.js"></script>
+</body>
+</html>
