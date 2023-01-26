@@ -7,7 +7,53 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page__body">
-<header class="header header--no-js">
+<nav class="main-nav">
+  <ul class="main-nav__list">
+    <li class="main-nav__item main-nav__item--current">
+      <a href="#">
+        <svg width="26" height="26">
+          <use xlink:href="img/sprite.svg#nav-home"></use>
+        </svg>
+        Главная
+      </a>
+    </li>
+    <li class="main-nav__item">
+      <a href="#">
+        <svg width="24" height="24">
+          <use xlink:href="img/sprite.svg#nav-catalog"></use>
+        </svg>
+        Каталог
+      </a>
+    </li>
+    <li class="main-nav__item">
+      <a href="#">
+        <svg width="24" height="24">
+          <use xlink:href="img/sprite.svg#nav-basket"></use>
+        </svg>
+        Корзина
+        <span class="main-nav__count">21</span>
+      </a>
+    </li>
+    <li class="main-nav__item">
+      <a href="#">
+        <svg width="24" height="24">
+          <use xlink:href="img/sprite.svg#nav-favorites"></use>
+        </svg>
+        Избранное
+      </a>
+    </li>
+    <li class="main-nav__item">
+      <a href="#">
+        <svg width="24" height="24">
+          <use xlink:href="img/sprite.svg#nav-profile"></use>
+        </svg>
+        Профиль
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<header class="header">
   <a class="header__logo" href="#">
     <span class="visually-hidden">Ссылка на главную страницу</span>
     <img src="img/logo.svg" alt="логотип Авто электрика" width="136" height="54">
@@ -92,13 +138,17 @@
       <div class="nav-about__lang">
         <a class="nav-about__lang-link nav-about__lang-link--current" href="#">
           <div class="nav-about__lang-image-wrapper">
-            <img src="img/ru-lang.png" alt="" width="31" height="32">
+            <picture>
+              <source type="image/webp" srcset="img/ru-lang.webp 1x">
+              <img src="img/ru-lang.png" alt="" width="31" height="32">
+            </picture>
           </div>
           RU
           <span class="visually-hidden">Русский</span>
         </a>
         <a class="nav-about__lang-link" href="#" lang="zh">
           <div class="nav-about__lang-image-wrapper">
+            <source type="image/webp" srcset="img/zh-lang.webp 1x">
             <img src="img/zh-lang.png" alt="" width="30" height="30">
           </div>
           日本語
@@ -141,24 +191,28 @@
     <div id="slider-main" class="slider">
       <div class="slider__item">
         <picture>
+          <source type="image/webp" srcset="img/slider.webp 1x">
           <source media="(min-width: 768px)" srcset="img/slider-tablet.png 1x">
           <img data-lazy="img/slider.png" src="" alt="">
         </picture>
       </div>
       <div class="slider__item">
         <picture>
+          <source type="image/webp" srcset="img/slider.webp 1x">
           <source media="(min-width: 768px)" srcset="img/slider-tablet.png 1x">
           <img data-lazy="img/slider.png" src="" alt="">
         </picture>
       </div>
       <div class="slider__item">
         <picture>
+          <source type="image/webp" srcset="img/slider.webp 1x">
           <source media="(min-width: 768px)" srcset="img/slider-tablet.png 1x">
           <img data-lazy="img/slider.png" src="" alt="">
         </picture>
       </div>
       <div class="slider__item">
         <picture>
+          <source type="image/webp" srcset="img/slider.webp 1x">
           <source media="(min-width: 768px)" srcset="img/slider-tablet.png 1x">
           <img data-lazy="img/slider.png" src="" alt="">
         </picture>
@@ -233,24 +287,28 @@
     <div id="slider-news" class="slider">
       <div class="slider__item">
         <picture>
+          <source type="image/webp" srcset="img/slider-1.webp 1x">
           <source media="(min-width: 768px)" srcset="img/slider-tablet.png 1x">
           <img data-lazy="img/slider-1.jpg" src="" alt="">
         </picture>
       </div>
       <div class="slider__item">
         <picture>
+          <source type="image/webp" srcset="img/slider-1.webp 1x">
           <source media="(min-width: 768px)" srcset="img/slider-tablet.png 1x">
           <img data-lazy="img/slider-1.jpg" src="" alt="">
         </picture>
       </div>
       <div class="slider__item">
         <picture>
+          <source type="image/webp" srcset="img/slider-1.webp 1x">
           <source media="(min-width: 768px)" srcset="img/slider-tablet.png 1x">
           <img data-lazy="img/slider-1.jpg" src="" alt="">
         </picture>
       </div>
       <div class="slider__item">
         <picture>
+          <source type="image/webp" srcset="img/slider-1.webp 1x">
           <source media="(min-width: 768px)" srcset="img/slider-tablet.png 1x">
           <img data-lazy="img/slider-1.jpg" src="" alt="">
         </picture>
@@ -271,7 +329,10 @@
   </section>
 
   <div class="divider">
-    <img src="img/divider.png" alt="" aria-hidden="true" width="345" height="112">
+    <picture>
+      <source type="image/webp" srcset="img/divider.webp 1x">
+      <img src="img/divider.png" alt="" aria-hidden="true" width="345" height="112">
+    </picture>
   </div>
 
   <section class="technique">
@@ -279,43 +340,64 @@
     <div class="technique__list">
       <a class="technique__item" href="#">
         <div class="technique__image-wrapper">
-          <img src="img/technique-1.png" alt="" aria-hidden="true" width="128" height="150">
+          <picture>
+            <source type="image/webp" srcset="img/technique-1.webp 1x">
+            <img src="img/technique-1.png" alt="" aria-hidden="true" width="128" height="150">
+          </picture>
         </div>
         <p class="technique__text">Грузовые</p>
       </a>
       <a class="technique__item" href="#">
         <div class="technique__image-wrapper">
-          <img src="img/technique-2.png" alt="" aria-hidden="true" width="128" height="150">
+          <picture>
+            <source type="image/webp" srcset="img/technique-2.webp 1x">
+            <img src="img/technique-2.png" alt="" aria-hidden="true" width="128" height="150">
+          </picture>
         </div>
         <p class="technique__text">Трактора</p>
       </a>
       <a class="technique__item" href="#">
         <div class="technique__image-wrapper">
-          <img src="img/technique-3.png" alt="" aria-hidden="true" width="128" height="150">
+          <picture>
+            <source type="image/webp" srcset="img/technique-3.webp 1x">
+            <img src="img/technique-3.png" alt="" aria-hidden="true" width="128" height="150">
+          </picture>
         </div>
         <p class="technique__text">Легковые</p>
       </a>
       <a class="technique__item" href="#">
         <div class="technique__image-wrapper">
-          <img src="img/technique-4.png" alt="" aria-hidden="true" width="128" height="149">
+          <picture>
+            <source type="image/webp" srcset="img/technique-4.webp 1x">
+            <img src="img/technique-4.png" alt="" aria-hidden="true" width="128" height="150">
+          </picture>
         </div>
         <p class="technique__text">Сельхозтехника</p>
       </a>
       <a class="technique__item" href="#">
         <div class="technique__image-wrapper">
-          <img src="img/technique-5.png" alt="" aria-hidden="true" width="128" height="150">
+          <picture>
+            <source type="image/webp" srcset="img/technique-5.webp 1x">
+            <img src="img/technique-5.png" alt="" aria-hidden="true" width="128" height="150">
+          </picture>
         </div>
         <p class="technique__text">Автобусы</p>
       </a>
       <a class="technique__item" href="#">
         <div class="technique__image-wrapper">
-          <img src="img/technique-6.png" alt="" aria-hidden="true" width="128" height="149">
+          <picture>
+            <source type="image/webp" srcset="img/technique-6.webp 1x">
+            <img src="img/technique-6.png" alt="" aria-hidden="true" width="128" height="150">
+          </picture>
         </div>
         <p class="technique__text">Спецтехника</p>
       </a>
       <a class="technique__item" href="#">
         <div class="technique__image-wrapper">
-          <img src="img/technique-7.png" alt="" aria-hidden="true" width="128" height="150">
+          <picture>
+            <source type="image/webp" srcset="img/technique-7.webp 1x">
+            <img src="img/technique-7.png" alt="" aria-hidden="true" width="128" height="150">
+          </picture>
         </div>
         <p class="technique__text">Другое</p>
       </a>
@@ -328,7 +410,10 @@
       <article class="recommendation__article card">
         <a href="#">
           <div class="card__image-wrapper">
-            <img src="img/card.png" alt="" width="165" height="165">
+            <picture>
+              <source type="image/webp" srcset="img/card.webp 1x">
+              <img src="img/card.png" alt="" width="165" height="165">
+            </picture>
           </div>
 
           <div class="card__price">
@@ -357,7 +442,10 @@
       <article class="recommendation__article card">
         <a href="#">
           <div class="card__image-wrapper">
-            <img src="img/card.png" alt="" width="165" height="165">
+            <picture>
+              <source type="image/webp" srcset="img/card.webp 1x">
+              <img src="img/card.png" alt="" width="165" height="165">
+            </picture>
           </div>
 
           <div class="card__price">
@@ -387,7 +475,10 @@
   </section>
 
   <div class="divider">
-    <img src="img/divider.png" alt="" aria-hidden="true" width="345" height="112">
+    <picture>
+      <source type="image/webp" srcset="img/divider.webp 1x">
+      <img src="img/divider.png" alt="" aria-hidden="true" width="345" height="112">
+    </picture>
   </div>
 
   <section class="advantages">
