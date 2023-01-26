@@ -1,10 +1,12 @@
 const button = document.querySelector('.header__menu-button')
 const nav = document.querySelector('.header__nav-wrapper')
 const page = document.querySelector('.page__body')
+const navAbout = document.querySelector('.nav-about');
 nav.classList.remove('header__nav-wrapper--no-js')
 button.addEventListener('click', () => {
   nav.classList.toggle('header__nav-wrapper--opened')
   page.classList.toggle('page__body--no-scroll')
+  navAbout.style.cssText = `height: ${window.innerHeight - 75}px`
 })
 
 const category = document.querySelectorAll('.info-list__category')

@@ -1,0 +1,54 @@
+@use "../global/mixins";
+
+.main-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.15);
+}
+
+.main-nav__list {
+  padding: 5px;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav__item {
+  position: relative;
+  text-align: center;
+
+  a {
+    display: block;
+    padding: 6px 10px;
+    color: #6e7191;
+    fill: #6e7191;
+  }
+
+  svg {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &--current {
+    a {
+      color: #f56e1e;
+    }
+  }
+
+  @include mixins.font(10px, 12px, 400);
+}
+
+.main-nav__count {
+  padding: 2px 4px;
+  color: #ffffff;
+  background: #f56e1e;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
